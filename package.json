@@ -1,0 +1,36 @@
+{
+  "name": "dsh-local-skills",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Registers user-level DSH skills (DSH_HOME/skills) as a bundled skill provider, so imported skills reach the session catalog regardless of the native-root provider.",
+  "author": "147-sys",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/147-sys/dsh-local-skills.git"
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "exports": {
+    ".": "./index.js"
+  },
+  "files": [
+    "index.js",
+    "cordis.patch.yml",
+    "README.md",
+    "INSTALL.md",
+    "PRIVACY.md",
+    "LICENSE"
+  ],
+  "keywords": [
+    "deepseek-harness",
+    "dsh",
+    "dsh-plugin",
+    "skills",
+    "skill-provider"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
